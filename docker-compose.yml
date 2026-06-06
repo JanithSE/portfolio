@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:5.7
+    container_name: portfolio_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - portfolio_network
+
+  wordpress:
+    image: wordpress:latest
+    container_name: portfolio_wordpress
+    depends_on:
+      - database
+    environment:
+      WORDPRESS_DB_HOST: database:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    ports:
+      - "8082:80"
+    volumes:
+      - ./portfolio-theme:/var/www/html/wp-content/themes/portfolio-theme
+      - wordpress_data:/var/www/html
+    networks:
+      - portfolio_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: portfolio_phpmyadmin
+    depends_on:
+      - database
+    environment:
+      PMA_HOST: database
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8081:80"
+    networks:
+      - portfolio_network
+
+volumes:
+  mysql_data:
+  wordpress_data:
+
+networks:
+  portfolio_network:
+    driver: bridge
