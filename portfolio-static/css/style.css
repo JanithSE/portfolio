@@ -676,6 +676,11 @@ section:nth-child(even) {
   color: white;
 }
 
+.project-image img {
+  position: relative;
+  z-index: 2;
+}
+
 .project-image::after {
   content: '';
   position: absolute;

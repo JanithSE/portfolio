@@ -54,5 +54,24 @@ document.addEventListener('DOMContentLoaded', function () {
         yearEl.textContent = new Date().getFullYear();
     }
 
+    // Project image fallback (emoji) if screenshot file is missing
+    document.querySelectorAll('.project-image img').forEach(img => {
+        const wrapper = img.closest('.project-image');
+        const fallback = img.getAttribute('data-fallback') || '📁';
+
+        const showFallback = () => {
+            img.remove();
+            if (wrapper) {
+                wrapper.classList.add('is-fallback');
+                wrapper.setAttribute('data-fallback', fallback);
+            }
+        };
+
+        img.addEventListener('error', showFallback);
+        if (img.complete && img.naturalWidth === 0) {
+            showFallback();
+        }
+    });
+
     document.body.classList.add('loaded');
 });
