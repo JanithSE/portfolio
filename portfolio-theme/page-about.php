@@ -19,7 +19,7 @@ get_header();
     <div class="container">
         <div class="about-content">
             <h2>Who I Am</h2>
-            <p>Hi, I'm <strong>Janith Camitha</strong> — a Computer Science student and aspiring software developer based in Sri Lanka. I discovered programming through curiosity about how apps work, and that curiosity turned into a genuine passion for building things that people actually use.</p>
+            <p>Hi, I'm <strong>Janith Chamitha</strong> — a Computer Science student and aspiring software developer based in Sri Lanka. I discovered programming through curiosity about how apps work, and that curiosity turned into a genuine passion for building things that people actually use.</p>
             <p>Over the past few years, I've worked on full-stack web projects, explored databases and APIs, and learned to deploy applications using Docker. I care about writing clean, readable code and creating interfaces that feel intuitive.</p>
             <p>I'm currently looking for a <strong>software development internship</strong> where I can contribute from day one, learn from experienced engineers, and grow into a strong developer.</p>
         </div>

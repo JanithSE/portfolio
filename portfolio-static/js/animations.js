@@ -1,5 +1,5 @@
 /* ================================================================
-   JANITH CAMITHA — NEXT-LEVEL PORTFOLIO ANIMATIONS
+   JANITH CHAMITHA — NEXT-LEVEL PORTFOLIO ANIMATIONS
    Drop this file in and add <script src="animations.js"></script>
    just before </body> in every HTML page.
    ================================================================ */

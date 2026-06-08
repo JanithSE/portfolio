@@ -11,7 +11,7 @@
 <header>
     <div class="container">
         <div class="logo">
-            <a href="<?php echo home_url(); ?>">Janith <span class="logo-accent">Camitha</span></a>
+            <a href="<?php echo home_url(); ?>">Janith <span class="logo-accent">Chamitha</span></a>
         </div>
         <nav>
             <?php

@@ -1,7 +1,7 @@
 <footer>
     <div class="container footer-content">
         <div class="footer-brand">
-            <p class="footer-name">Janith Camitha</p>
+            <p class="footer-name">Janith Chamitha</p>
             <p class="footer-tagline">Computer Science Student &amp; Aspiring Developer</p>
         </div>
         <div class="footer-links">
@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <?php echo date('Y'); ?> Janith Camitha. All rights reserved.</p>
+        <p>&copy; <?php echo date('Y'); ?> Janith Chamitha. All rights reserved.</p>
     </div>
 </footer>
 

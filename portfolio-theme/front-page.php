@@ -21,14 +21,14 @@ foreach ($photo_extensions as $ext) {
     <div class="container hero-layout">
         <div class="profile-photo-wrap">
             <?php if ($profile_photo_url) : ?>
-                <img src="<?php echo esc_url($profile_photo_url); ?>" alt="Janith Camitha" class="profile-photo">
+                <img src="<?php echo esc_url($profile_photo_url); ?>" alt="Janith Chamitha" class="profile-photo">
             <?php else : ?>
-                <div class="profile-photo profile-photo-placeholder" aria-label="Janith Camitha">JC</div>
+                <div class="profile-photo profile-photo-placeholder" aria-label="Janith Chamitha">JC</div>
             <?php endif; ?>
         </div>
         <div class="hero-text">
         <p class="hero-greeting">Hello, I'm</p>
-        <h1>Janith Camitha</h1>
+        <h1>Janith Chamitha</h1>
         <p class="hero-subtitle">Computer Science Student &amp; Aspiring Software Developer</p>
         <p class="hero-desc">I build clean, functional web applications and I'm actively seeking internship opportunities to grow with a great team.</p>
         <div class="hero-buttons">
