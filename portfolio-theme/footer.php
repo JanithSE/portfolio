@@ -24,12 +24,11 @@
     </div>
 </footer>
 
-<a href="<?php echo esc_url(portfolio_whatsapp_url('Hi Janith, I saw your portfolio and would like to connect!')); ?>"
+<a href="<?php echo esc_url( get_template_directory_uri() . '/assets/Janith_Camitha_CV.pdf' ); ?>"
    class="whatsapp-float"
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="Chat on WhatsApp"
-   title="Chat on WhatsApp">
+   download
+   aria-label="Download CV"
+   title="Download CV">
     <?php echo portfolio_whatsapp_icon(28); ?>
 </a>
 
