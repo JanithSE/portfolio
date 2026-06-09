@@ -24,7 +24,7 @@
     </div>
 </footer>
 
-<a href="<?php echo esc_url( get_template_directory_uri() . '/assets/Janith_Camitha_CV.pdf' ); ?>"
+<a href="<?php echo esc_url( get_template_directory_uri() . '/assets/Janith_Chamith_CV.pdf' ); ?>"
    class="whatsapp-float"
    download
    aria-label="Download CV"
@@ -35,3 +35,4 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+
